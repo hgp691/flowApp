@@ -18,6 +18,7 @@
 		D635A05224DFA98A00CABD06 /* IncommingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05124DFA98A00CABD06 /* IncommingItemView.swift */; };
 		D635A05424DFAA2600CABD06 /* IncommingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05324DFAA2600CABD06 /* IncommingItemViewModel.swift */; };
 		D635A05624E0421800CABD06 /* NewIncommingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05524E0421800CABD06 /* NewIncommingForm.swift */; };
+		D635A05924E0F72100CABD06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05824E0F72100CABD06 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		D635A05124DFA98A00CABD06 /* IncommingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncommingItemView.swift; sourceTree = "<group>"; };
 		D635A05324DFAA2600CABD06 /* IncommingItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncommingItemViewModel.swift; sourceTree = "<group>"; };
 		D635A05524E0421800CABD06 /* NewIncommingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIncommingForm.swift; sourceTree = "<group>"; };
+		D635A05724E0F49300CABD06 /* FlowApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlowApp.entitlements; sourceTree = "<group>"; };
+		D635A05824E0F72100CABD06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +69,12 @@
 		D635A03224DF8D4A00CABD06 /* FlowApp */ = {
 			isa = PBXGroup;
 			children = (
+				D635A05724E0F49300CABD06 /* FlowApp.entitlements */,
 				D635A04724DFA25A00CABD06 /* CoreData */,
 				D635A04224DFA16900CABD06 /* Incomming */,
 				D635A03324DF8D4A00CABD06 /* FlowAppApp.swift */,
 				D635A03524DF8D4A00CABD06 /* ContentView.swift */,
+				D635A05824E0F72100CABD06 /* AppDelegate.swift */,
 				D635A03724DF8D4C00CABD06 /* Assets.xcassets */,
 				D635A03C24DF8D4C00CABD06 /* Info.plist */,
 				D635A03924DF8D4C00CABD06 /* Preview Content */,
@@ -177,6 +182,7 @@
 			files = (
 				D635A03624DF8D4A00CABD06 /* ContentView.swift in Sources */,
 				D635A04424DFA19800CABD06 /* IncommingMainView.swift in Sources */,
+				D635A05924E0F72100CABD06 /* AppDelegate.swift in Sources */,
 				D635A05224DFA98A00CABD06 /* IncommingItemView.swift in Sources */,
 				D635A05424DFAA2600CABD06 /* IncommingItemViewModel.swift in Sources */,
 				D635A05624E0421800CABD06 /* NewIncommingForm.swift in Sources */,
@@ -311,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlowApp/FlowApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FlowApp/Preview Content\"";
 				DEVELOPMENT_TEAM = S6AFWAWALQ;
@@ -324,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.horacioguzman.FlowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -333,6 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlowApp/FlowApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FlowApp/Preview Content\"";
 				DEVELOPMENT_TEAM = S6AFWAWALQ;
@@ -346,7 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.horacioguzman.FlowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
