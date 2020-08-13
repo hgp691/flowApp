@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct IncommingItemView: View {
+struct IncomingItemView: View {
     
-    let viewModel: IncommingItemViewModelProtocol
+    let viewModel: IncomingItemViewModelProtocol
     
     var body: some View {
         VStack {
@@ -31,6 +31,6 @@ struct IncommingItemView: View {
 
 struct IncommingItemView_Previews: PreviewProvider {
     static var previews: some View {
-        IncommingItemView(viewModel: MockIncommingViewModel())
+        IncomingItemView(viewModel: MockIncommingViewModel())
     }
 }

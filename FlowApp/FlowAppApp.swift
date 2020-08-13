@@ -11,7 +11,7 @@ import SwiftUI
 struct FlowAppApp: App {
     var body: some Scene {
         WindowGroup {
-            IncommingMainView()
+            IncomingMainView()
         }
     }
 }

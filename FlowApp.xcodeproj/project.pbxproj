@@ -11,13 +11,13 @@
 		D635A03624DF8D4A00CABD06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A03524DF8D4A00CABD06 /* ContentView.swift */; };
 		D635A03824DF8D4C00CABD06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D635A03724DF8D4C00CABD06 /* Assets.xcassets */; };
 		D635A03B24DF8D4C00CABD06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D635A03A24DF8D4C00CABD06 /* Preview Assets.xcassets */; };
-		D635A04424DFA19800CABD06 /* IncommingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A04324DFA19800CABD06 /* IncommingMainView.swift */; };
-		D635A04624DFA20D00CABD06 /* IncommingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A04524DFA20D00CABD06 /* IncommingListView.swift */; };
+		D635A04424DFA19800CABD06 /* IncomingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A04324DFA19800CABD06 /* IncomingMainView.swift */; };
+		D635A04624DFA20D00CABD06 /* IncomingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A04524DFA20D00CABD06 /* IncomingListView.swift */; };
 		D635A04924DFA26D00CABD06 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A04824DFA26D00CABD06 /* CoreDataManager.swift */; };
-		D635A04C24DFA43400CABD06 /* IncommingDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D635A04A24DFA43400CABD06 /* IncommingDataModel.xcdatamodeld */; };
-		D635A05224DFA98A00CABD06 /* IncommingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05124DFA98A00CABD06 /* IncommingItemView.swift */; };
-		D635A05424DFAA2600CABD06 /* IncommingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05324DFAA2600CABD06 /* IncommingItemViewModel.swift */; };
-		D635A05624E0421800CABD06 /* NewIncommingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05524E0421800CABD06 /* NewIncommingForm.swift */; };
+		D635A04C24DFA43400CABD06 /* IncomingDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D635A04A24DFA43400CABD06 /* IncomingDataModel.xcdatamodeld */; };
+		D635A05224DFA98A00CABD06 /* IncomingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05124DFA98A00CABD06 /* IncomingItemView.swift */; };
+		D635A05424DFAA2600CABD06 /* IncomingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05324DFAA2600CABD06 /* IncomingItemViewModel.swift */; };
+		D635A05624E0421800CABD06 /* NewIncomingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05524E0421800CABD06 /* NewIncomingForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +27,13 @@
 		D635A03724DF8D4C00CABD06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D635A03A24DF8D4C00CABD06 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D635A03C24DF8D4C00CABD06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D635A04324DFA19800CABD06 /* IncommingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncommingMainView.swift; sourceTree = "<group>"; };
-		D635A04524DFA20D00CABD06 /* IncommingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncommingListView.swift; sourceTree = "<group>"; };
+		D635A04324DFA19800CABD06 /* IncomingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingMainView.swift; sourceTree = "<group>"; };
+		D635A04524DFA20D00CABD06 /* IncomingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingListView.swift; sourceTree = "<group>"; };
 		D635A04824DFA26D00CABD06 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		D635A04B24DFA43400CABD06 /* IncommingDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IncommingDataModel.xcdatamodel; sourceTree = "<group>"; };
-		D635A05124DFA98A00CABD06 /* IncommingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncommingItemView.swift; sourceTree = "<group>"; };
-		D635A05324DFAA2600CABD06 /* IncommingItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncommingItemViewModel.swift; sourceTree = "<group>"; };
-		D635A05524E0421800CABD06 /* NewIncommingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIncommingForm.swift; sourceTree = "<group>"; };
+		D635A05124DFA98A00CABD06 /* IncomingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingItemView.swift; sourceTree = "<group>"; };
+		D635A05324DFAA2600CABD06 /* IncomingItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingItemViewModel.swift; sourceTree = "<group>"; };
+		D635A05524E0421800CABD06 /* NewIncomingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIncomingForm.swift; sourceTree = "<group>"; };
 		D6922C8D24E4FA9500ABA92A /* FlowApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlowApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +69,7 @@
 			children = (
 				D6922C8D24E4FA9500ABA92A /* FlowApp.entitlements */,
 				D635A04724DFA25A00CABD06 /* CoreData */,
-				D635A04224DFA16900CABD06 /* Incomming */,
+				D635A04224DFA16900CABD06 /* Incoming */,
 				D635A03324DF8D4A00CABD06 /* FlowAppApp.swift */,
 				D635A03524DF8D4A00CABD06 /* ContentView.swift */,
 				D635A03724DF8D4C00CABD06 /* Assets.xcassets */,
@@ -87,23 +87,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D635A04224DFA16900CABD06 /* Incomming */ = {
+		D635A04224DFA16900CABD06 /* Incoming */ = {
 			isa = PBXGroup;
 			children = (
-				D635A04324DFA19800CABD06 /* IncommingMainView.swift */,
-				D635A04524DFA20D00CABD06 /* IncommingListView.swift */,
-				D635A05124DFA98A00CABD06 /* IncommingItemView.swift */,
-				D635A05324DFAA2600CABD06 /* IncommingItemViewModel.swift */,
-				D635A05524E0421800CABD06 /* NewIncommingForm.swift */,
+				D635A04324DFA19800CABD06 /* IncomingMainView.swift */,
+				D635A04524DFA20D00CABD06 /* IncomingListView.swift */,
+				D635A05124DFA98A00CABD06 /* IncomingItemView.swift */,
+				D635A05324DFAA2600CABD06 /* IncomingItemViewModel.swift */,
+				D635A05524E0421800CABD06 /* NewIncomingForm.swift */,
 			);
-			path = Incomming;
+			path = Incoming;
 			sourceTree = "<group>";
 		};
 		D635A04724DFA25A00CABD06 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				D635A04824DFA26D00CABD06 /* CoreDataManager.swift */,
-				D635A04A24DFA43400CABD06 /* IncommingDataModel.xcdatamodeld */,
+				D635A04A24DFA43400CABD06 /* IncomingDataModel.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -178,14 +178,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D635A03624DF8D4A00CABD06 /* ContentView.swift in Sources */,
-				D635A04424DFA19800CABD06 /* IncommingMainView.swift in Sources */,
-				D635A05224DFA98A00CABD06 /* IncommingItemView.swift in Sources */,
-				D635A05424DFAA2600CABD06 /* IncommingItemViewModel.swift in Sources */,
-				D635A05624E0421800CABD06 /* NewIncommingForm.swift in Sources */,
-				D635A04624DFA20D00CABD06 /* IncommingListView.swift in Sources */,
+				D635A04424DFA19800CABD06 /* IncomingMainView.swift in Sources */,
+				D635A05224DFA98A00CABD06 /* IncomingItemView.swift in Sources */,
+				D635A05424DFAA2600CABD06 /* IncomingItemViewModel.swift in Sources */,
+				D635A05624E0421800CABD06 /* NewIncomingForm.swift in Sources */,
+				D635A04624DFA20D00CABD06 /* IncomingListView.swift in Sources */,
 				D635A04924DFA26D00CABD06 /* CoreDataManager.swift in Sources */,
 				D635A03424DF8D4A00CABD06 /* FlowAppApp.swift in Sources */,
-				D635A04C24DFA43400CABD06 /* IncommingDataModel.xcdatamodeld in Sources */,
+				D635A04C24DFA43400CABD06 /* IncomingDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,13 +378,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D635A04A24DFA43400CABD06 /* IncommingDataModel.xcdatamodeld */ = {
+		D635A04A24DFA43400CABD06 /* IncomingDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				D635A04B24DFA43400CABD06 /* IncommingDataModel.xcdatamodel */,
 			);
 			currentVersion = D635A04B24DFA43400CABD06 /* IncommingDataModel.xcdatamodel */;
-			path = IncommingDataModel.xcdatamodeld;
+			path = IncomingDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

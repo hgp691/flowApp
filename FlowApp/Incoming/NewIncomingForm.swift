@@ -7,21 +7,21 @@
 
 import SwiftUI
 
-struct NewIncommingForm: View {
+struct NewIncomingForm: View {
     
     @Environment(\.presentationMode) private var presentationMode
     
     @State var value: String = ""
-    @State var isIncomming = false
-    @State var incommingDescription = ""
+    @State var isIncoming = false
+    @State var incomingDescription = ""
     
     var body: some View {
         Form {
             TextField("Value", text: $value).keyboardType(.numberPad)
-            Toggle(isOn: $isIncomming, label: {
-                Text("Is Incomming")
+            Toggle(isOn: $isIncoming, label: {
+                Text("Is Incoming")
             })
-            TextField("Incomming Description", text: $incommingDescription)
+            TextField("Incoming Description", text: $incomingDescription)
             Button("Save") {
                 saveIncomming()
             }
@@ -29,15 +29,15 @@ struct NewIncommingForm: View {
     }
 }
 
-extension NewIncommingForm {
+extension NewIncomingForm {
     
     private func saveIncomming() {
         guard let value = Double(value) else {
             return
         }
-        CoreDataManager.sharedManager.createIncomming(value,
-                                                      isIncomming,
-                                                      incommingDescription)
+        CoreDataManager.sharedManager.createIncoming(value,
+                                                      isIncoming,
+                                                      incomingDescription)
         dismissView()
     }
     private func dismissView() {
@@ -47,6 +47,6 @@ extension NewIncommingForm {
 
 struct NewIncommingForm_Previews: PreviewProvider {
     static var previews: some View {
-        NewIncommingForm()
+        NewIncomingForm()
     }
 }

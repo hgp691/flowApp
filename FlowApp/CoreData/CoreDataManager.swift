@@ -18,7 +18,7 @@ public class CoreDataManager {
         guard let mom = NSManagedObjectModel.mergedModel(from: [bundle]) else {
             fatalError()
         }
-        let container = NSPersistentContainer(name: "IncommingDataModel", managedObjectModel: mom)
+        let container = NSPersistentContainer(name: "IncomingDataModel", managedObjectModel: mom)
         
         let storeURL = URL.storeURL(for: "group.group1.FlowApp.horacioguzman.com", databaseName: "FlowAppDatabase")
         let storeDescription = NSPersistentStoreDescription(url: storeURL)
@@ -47,27 +47,27 @@ public class CoreDataManager {
         }
     }
     
-    func incommingCount() {
+    func incomingCount() {
         let context = persistanceContainer.viewContext
-        let request: NSFetchRequest<Incomming> = Incomming.fetchRequest()
+        let request: NSFetchRequest<Incoming> = Incoming.fetchRequest()
         let count = try? context.count(for: request)
-        print("Coredata Incomming count \(count ?? -1)")
+        print("Coredata Incoming count \(count ?? -1)")
     }
     
-    public static func getAll() -> NSFetchRequest<Incomming> {
-        let request: NSFetchRequest<Incomming> = Incomming.fetchRequest()
+    public static func getAll() -> NSFetchRequest<Incoming> {
+        let request: NSFetchRequest<Incoming> = Incoming.fetchRequest()
         request.sortDescriptors = []
         return request
     }
     
-    public func createIncomming(_ value: Double,_ isIncomming: Bool,_ itemDescription: String) {
-        let incomming = Incomming(context: persistanceContainer.viewContext)
-        incomming.value = value
-        incomming.isIncomming = isIncomming
-        incomming.itemDescription = itemDescription
-        incomming.date = Date()
+    public func createIncoming(_ value: Double,_ isIncoming: Bool,_ itemDescription: String) {
+        let incoming = Incoming(context: persistanceContainer.viewContext)
+        incoming.value = value
+        incoming.isIncoming = isIncoming
+        incoming.itemDescription = itemDescription
+        incoming.date = Date()
         saveContext()
-        incommingCount()
+        incomingCount()
     }
 }
 

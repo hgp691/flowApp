@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct IncommingMainView: View {
+struct IncomingMainView: View {
     
     @State var showingNewIncommingForm = false
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         NavigationView {
-            IncommingListView()
+            IncomingListView()
                 .environment(\.managedObjectContext, CoreDataManager.sharedManager.persistanceContainer.viewContext)
-                .navigationBarTitle("Incommings")
+                .navigationBarTitle("Incomings")
                 .foregroundColor(.blue)
                 .navigationBarItems(trailing:
                                         Button(action: {
@@ -27,7 +27,7 @@ struct IncommingMainView: View {
                                                 .foregroundColor(.blue)
                                         }.sheet(isPresented: $showingNewIncommingForm,
                                                 content: {
-                                            NewIncommingForm()
+                                            NewIncomingForm()
                                         })
                 )
         }
@@ -36,6 +36,6 @@ struct IncommingMainView: View {
 
 struct IncommingMainView_Previews: PreviewProvider {
     static var previews: some View {
-        IncommingMainView()
+        IncomingMainView()
     }
 }

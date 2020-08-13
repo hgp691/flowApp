@@ -8,39 +8,39 @@
 import Foundation
 import SwiftUI
 
-protocol IncommingItemViewModelProtocol {
+protocol IncomingItemViewModelProtocol {
     
     var itemDescription: String { get }
     var value: String { get }
     var color: Color { get }
 }
 
-class IncommingItemViewModel: IncommingItemViewModelProtocol {
+class IncomingItemViewModel: IncomingItemViewModelProtocol {
     
-    var incomming: Incomming
+    var incoming: Incoming
     
     var itemDescription: String {
-        incomming.itemDescription ?? ""
+        incoming.itemDescription ?? ""
     }
     
     var value: String {
-        "\(incomming.value)"
+        "\(incoming.value)"
     }
     
     var color: Color {
-        if incomming.isIncomming {
+        if incoming.isIncoming {
             return Color.blue
         } else {
             return Color.green
         }
     }
     
-    init(incomming: Incomming) {
-        self.incomming = incomming
+    init(incoming: Incoming) {
+        self.incoming = incoming
     }
 }
 
-class MockIncommingViewModel: IncommingItemViewModelProtocol {
+class MockIncommingViewModel: IncomingItemViewModelProtocol {
     
     var itemDescription: String {
         "Incomming mock"
