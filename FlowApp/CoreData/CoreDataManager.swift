@@ -18,7 +18,7 @@ public class CoreDataManager {
         guard let mom = NSManagedObjectModel.mergedModel(from: [bundle]) else {
             fatalError()
         }
-        let container = NSPersistentContainer(name: "CoreDataModel", managedObjectModel: mom)
+        let container = NSPersistentContainer(name: "IncommingDataModel", managedObjectModel: mom)
         container.loadPersistentStores { (description, error) in
             
         }
@@ -55,6 +55,7 @@ public class CoreDataManager {
     }
     
     public func createIncomming(_ value: Double,_ isIncomming: Bool,_ itemDescription: String) {
+        print("createIncomming -> value:\(value), description: \(itemDescription)")
         let incomming = Incomming(context: persistanceContainer.viewContext)
         incomming.value = value
         incomming.isIncomming = isIncomming

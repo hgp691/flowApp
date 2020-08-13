@@ -18,7 +18,39 @@
 		D635A05224DFA98A00CABD06 /* IncommingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05124DFA98A00CABD06 /* IncommingItemView.swift */; };
 		D635A05424DFAA2600CABD06 /* IncommingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05324DFAA2600CABD06 /* IncommingItemViewModel.swift */; };
 		D635A05624E0421800CABD06 /* NewIncommingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05524E0421800CABD06 /* NewIncommingForm.swift */; };
+		D660D21724E4EE59009D1EE4 /* FlowIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D6941D0A24E4E8F5007A8535 /* FlowIntent.intentdefinition */; };
+		D660D21824E4F241009D1EE4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A04824DFA26D00CABD06 /* CoreDataManager.swift */; };
+		D660D21A24E4F387009D1EE4 /* IncommingDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D635A04A24DFA43400CABD06 /* IncommingDataModel.xcdatamodeld */; };
+		D6941CF324E4D968007A8535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6941CF224E4D968007A8535 /* AppDelegate.swift */; };
+		D6941CFC24E4DCF0007A8535 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6941CFB24E4DCF0007A8535 /* IntentHandler.swift */; };
+		D6941D0024E4DCF0007A8535 /* FlowIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D6941CF924E4DCF0007A8535 /* FlowIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D6941D0B24E4E8F5007A8535 /* FlowIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D6941D0A24E4E8F5007A8535 /* FlowIntent.intentdefinition */; };
+		D6941D0D24E4EB08007A8535 /* AddIncomingIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6941D0C24E4EB08007A8535 /* AddIncomingIntentHandler.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6941CFE24E4DCF0007A8535 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D635A02824DF8D4A00CABD06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6941CF824E4DCF0007A8535;
+			remoteInfo = FlowIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6941D0424E4DCF0007A8535 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D6941D0024E4DCF0007A8535 /* FlowIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D635A03024DF8D4A00CABD06 /* FlowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,10 +66,24 @@
 		D635A05124DFA98A00CABD06 /* IncommingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncommingItemView.swift; sourceTree = "<group>"; };
 		D635A05324DFAA2600CABD06 /* IncommingItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncommingItemViewModel.swift; sourceTree = "<group>"; };
 		D635A05524E0421800CABD06 /* NewIncommingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIncommingForm.swift; sourceTree = "<group>"; };
+		D6941CF224E4D968007A8535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6941CF424E4DC5C007A8535 /* FlowApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlowApp.entitlements; sourceTree = "<group>"; };
+		D6941CF924E4DCF0007A8535 /* FlowIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlowIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6941CFB24E4DCF0007A8535 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		D6941CFD24E4DCF0007A8535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6941D0A24E4E8F5007A8535 /* FlowIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = FlowIntent.intentdefinition; sourceTree = "<group>"; };
+		D6941D0C24E4EB08007A8535 /* AddIncomingIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncomingIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D635A02D24DF8D4A00CABD06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6941CF624E4DCF0007A8535 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				D635A03224DF8D4A00CABD06 /* FlowApp */,
+				D6941CFA24E4DCF0007A8535 /* FlowIntents */,
 				D635A03124DF8D4A00CABD06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				D635A03024DF8D4A00CABD06 /* FlowApp.app */,
+				D6941CF924E4DCF0007A8535 /* FlowIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,9 +114,11 @@
 		D635A03224DF8D4A00CABD06 /* FlowApp */ = {
 			isa = PBXGroup;
 			children = (
+				D6941CF424E4DC5C007A8535 /* FlowApp.entitlements */,
 				D635A04724DFA25A00CABD06 /* CoreData */,
 				D635A04224DFA16900CABD06 /* Incomming */,
 				D635A03324DF8D4A00CABD06 /* FlowAppApp.swift */,
+				D6941CF224E4D968007A8535 /* AppDelegate.swift */,
 				D635A03524DF8D4A00CABD06 /* ContentView.swift */,
 				D635A03724DF8D4C00CABD06 /* Assets.xcassets */,
 				D635A03C24DF8D4C00CABD06 /* Info.plist */,
@@ -106,6 +156,17 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		D6941CFA24E4DCF0007A8535 /* FlowIntents */ = {
+			isa = PBXGroup;
+			children = (
+				D6941CFB24E4DCF0007A8535 /* IntentHandler.swift */,
+				D6941CFD24E4DCF0007A8535 /* Info.plist */,
+				D6941D0A24E4E8F5007A8535 /* FlowIntent.intentdefinition */,
+				D6941D0C24E4EB08007A8535 /* AddIncomingIntentHandler.swift */,
+			);
+			path = FlowIntents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,15 +177,34 @@
 				D635A02C24DF8D4A00CABD06 /* Sources */,
 				D635A02D24DF8D4A00CABD06 /* Frameworks */,
 				D635A02E24DF8D4A00CABD06 /* Resources */,
+				D6941D0424E4DCF0007A8535 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D6941CFF24E4DCF0007A8535 /* PBXTargetDependency */,
 			);
 			name = FlowApp;
 			productName = FlowApp;
 			productReference = D635A03024DF8D4A00CABD06 /* FlowApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D6941CF824E4DCF0007A8535 /* FlowIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6941D0124E4DCF0007A8535 /* Build configuration list for PBXNativeTarget "FlowIntents" */;
+			buildPhases = (
+				D6941CF524E4DCF0007A8535 /* Sources */,
+				D6941CF624E4DCF0007A8535 /* Frameworks */,
+				D6941CF724E4DCF0007A8535 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowIntents;
+			productName = FlowIntents;
+			productReference = D6941CF924E4DCF0007A8535 /* FlowIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -136,6 +216,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					D635A02F24DF8D4A00CABD06 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					D6941CF824E4DCF0007A8535 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -154,6 +237,7 @@
 			projectRoot = "";
 			targets = (
 				D635A02F24DF8D4A00CABD06 /* FlowApp */,
+				D6941CF824E4DCF0007A8535 /* FlowIntents */,
 			);
 		};
 /* End PBXProject section */
@@ -168,6 +252,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6941CF724E4DCF0007A8535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -178,16 +269,38 @@
 				D635A03624DF8D4A00CABD06 /* ContentView.swift in Sources */,
 				D635A04424DFA19800CABD06 /* IncommingMainView.swift in Sources */,
 				D635A05224DFA98A00CABD06 /* IncommingItemView.swift in Sources */,
+				D660D21724E4EE59009D1EE4 /* FlowIntent.intentdefinition in Sources */,
 				D635A05424DFAA2600CABD06 /* IncommingItemViewModel.swift in Sources */,
 				D635A05624E0421800CABD06 /* NewIncommingForm.swift in Sources */,
 				D635A04624DFA20D00CABD06 /* IncommingListView.swift in Sources */,
 				D635A04924DFA26D00CABD06 /* CoreDataManager.swift in Sources */,
 				D635A03424DF8D4A00CABD06 /* FlowAppApp.swift in Sources */,
+				D6941CF324E4D968007A8535 /* AppDelegate.swift in Sources */,
 				D635A04C24DFA43400CABD06 /* IncommingDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6941CF524E4DCF0007A8535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6941D0D24E4EB08007A8535 /* AddIncomingIntentHandler.swift in Sources */,
+				D6941D0B24E4E8F5007A8535 /* FlowIntent.intentdefinition in Sources */,
+				D660D21A24E4F387009D1EE4 /* IncommingDataModel.xcdatamodeld in Sources */,
+				D660D21824E4F241009D1EE4 /* CoreDataManager.swift in Sources */,
+				D6941CFC24E4DCF0007A8535 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6941CFF24E4DCF0007A8535 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6941CF824E4DCF0007A8535 /* FlowIntents */;
+			targetProxy = D6941CFE24E4DCF0007A8535 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D635A03D24DF8D4C00CABD06 /* Debug */ = {
@@ -309,8 +422,10 @@
 		D635A04024DF8D4C00CABD06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlowApp/FlowApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FlowApp/Preview Content\"";
 				DEVELOPMENT_TEAM = S6AFWAWALQ;
@@ -331,8 +446,10 @@
 		D635A04124DF8D4C00CABD06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlowApp/FlowApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FlowApp/Preview Content\"";
 				DEVELOPMENT_TEAM = S6AFWAWALQ;
@@ -345,6 +462,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.horacioguzman.FlowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D6941D0224E4DCF0007A8535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6AFWAWALQ;
+				INFOPLIST_FILE = FlowIntents/Info.plist;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.horacioguzman.FlowApp.FlowIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6941D0324E4DCF0007A8535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6AFWAWALQ;
+				INFOPLIST_FILE = FlowIntents/Info.plist;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.horacioguzman.FlowApp.FlowIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,6 +524,15 @@
 			buildConfigurations = (
 				D635A04024DF8D4C00CABD06 /* Debug */,
 				D635A04124DF8D4C00CABD06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6941D0124E4DCF0007A8535 /* Build configuration list for PBXNativeTarget "FlowIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6941D0224E4DCF0007A8535 /* Debug */,
+				D6941D0324E4DCF0007A8535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
