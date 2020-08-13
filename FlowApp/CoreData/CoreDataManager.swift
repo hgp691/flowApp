@@ -18,7 +18,13 @@ public class CoreDataManager {
         guard let mom = NSManagedObjectModel.mergedModel(from: [bundle]) else {
             fatalError()
         }
-        let container = NSPersistentContainer(name: "CoreDataModel", managedObjectModel: mom)
+        let container = NSPersistentContainer(name: "IncommingDataModel", managedObjectModel: mom)
+        
+        let storeURL = URL.storeURL(for: "group.group1.FlowApp.horacioguzman.com", databaseName: "FlowAppDatabase")
+        let storeDescription = NSPersistentStoreDescription(url: storeURL)
+        
+        container.persistentStoreDescriptions = [storeDescription]
+        
         container.loadPersistentStores { (description, error) in
             
         }
@@ -62,5 +68,17 @@ public class CoreDataManager {
         incomming.date = Date()
         saveContext()
         incommingCount()
+    }
+}
+
+public extension URL {
+
+    /// Returns a URL for the given app group and database pointing to the sqlite database.
+    static func storeURL(for appGroup: String, databaseName: String) -> URL {
+        guard let fileContainer = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: appGroup) else {
+            fatalError("Shared file container could not be created.")
+        }
+
+        return fileContainer.appendingPathComponent("\(databaseName).sqlite")
     }
 }
