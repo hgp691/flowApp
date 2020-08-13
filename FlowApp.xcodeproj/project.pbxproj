@@ -19,7 +19,48 @@
 		D635A05424DFAA2600CABD06 /* IncommingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05324DFAA2600CABD06 /* IncommingItemViewModel.swift */; };
 		D635A05624E0421800CABD06 /* NewIncommingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05524E0421800CABD06 /* NewIncommingForm.swift */; };
 		D635A05924E0F72100CABD06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A05824E0F72100CABD06 /* AppDelegate.swift */; };
+		D635A06124E1062700CABD06 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A06024E1062700CABD06 /* IntentHandler.swift */; };
+		D635A06A24E1062700CABD06 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D635A06924E1062700CABD06 /* IntentsUI.framework */; };
+		D635A06D24E1062700CABD06 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635A06C24E1062700CABD06 /* IntentViewController.swift */; };
+		D635A07024E1062700CABD06 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D635A06E24E1062700CABD06 /* MainInterface.storyboard */; };
+		D635A07424E1062700CABD06 /* IntentsFlowUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D635A06724E1062700CABD06 /* IntentsFlowUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D635A07724E1062700CABD06 /* IntentsFlow.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D635A05E24E1062600CABD06 /* IntentsFlow.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D6B0E00324E2576900642DC9 /* FlowIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D6B0E00224E2576900642DC9 /* FlowIntents.intentdefinition */; };
+		D6B0E00524E25B4800642DC9 /* AddIncommingIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B0E00424E25B4800642DC9 /* AddIncommingIntentHandler.swift */; };
+		D6B0E00624E2649500642DC9 /* FlowIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D6B0E00224E2576900642DC9 /* FlowIntents.intentdefinition */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D635A07224E1062700CABD06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D635A02824DF8D4A00CABD06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D635A06624E1062700CABD06;
+			remoteInfo = IntentsFlowUI;
+		};
+		D635A07524E1062700CABD06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D635A02824DF8D4A00CABD06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D635A05D24E1062600CABD06;
+			remoteInfo = IntentsFlow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D635A07E24E1062700CABD06 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D635A07724E1062700CABD06 /* IntentsFlow.appex in Embed App Extensions */,
+				D635A07424E1062700CABD06 /* IntentsFlowUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D635A03024DF8D4A00CABD06 /* FlowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +78,16 @@
 		D635A05524E0421800CABD06 /* NewIncommingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIncommingForm.swift; sourceTree = "<group>"; };
 		D635A05724E0F49300CABD06 /* FlowApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlowApp.entitlements; sourceTree = "<group>"; };
 		D635A05824E0F72100CABD06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D635A05E24E1062600CABD06 /* IntentsFlow.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsFlow.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D635A06024E1062700CABD06 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		D635A06224E1062700CABD06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D635A06724E1062700CABD06 /* IntentsFlowUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsFlowUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D635A06924E1062700CABD06 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		D635A06C24E1062700CABD06 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		D635A06F24E1062700CABD06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D635A07124E1062700CABD06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B0E00224E2576900642DC9 /* FlowIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = FlowIntents.intentdefinition; sourceTree = "<group>"; };
+		D6B0E00424E25B4800642DC9 /* AddIncommingIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncommingIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +98,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D635A05B24E1062600CABD06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D635A06424E1062700CABD06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D635A06A24E1062700CABD06 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,6 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				D635A03224DF8D4A00CABD06 /* FlowApp */,
+				D635A05F24E1062700CABD06 /* IntentsFlow */,
+				D635A06B24E1062700CABD06 /* IntentsFlowUI */,
+				D635A06824E1062700CABD06 /* Frameworks */,
 				D635A03124DF8D4A00CABD06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				D635A03024DF8D4A00CABD06 /* FlowApp.app */,
+				D635A05E24E1062600CABD06 /* IntentsFlow.appex */,
+				D635A06724E1062700CABD06 /* IntentsFlowUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +182,35 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		D635A05F24E1062700CABD06 /* IntentsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				D635A06024E1062700CABD06 /* IntentHandler.swift */,
+				D635A06224E1062700CABD06 /* Info.plist */,
+				D6B0E00224E2576900642DC9 /* FlowIntents.intentdefinition */,
+				D6B0E00424E25B4800642DC9 /* AddIncommingIntentHandler.swift */,
+			);
+			path = IntentsFlow;
+			sourceTree = "<group>";
+		};
+		D635A06824E1062700CABD06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D635A06924E1062700CABD06 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D635A06B24E1062700CABD06 /* IntentsFlowUI */ = {
+			isa = PBXGroup;
+			children = (
+				D635A06C24E1062700CABD06 /* IntentViewController.swift */,
+				D635A06E24E1062700CABD06 /* MainInterface.storyboard */,
+				D635A07124E1062700CABD06 /* Info.plist */,
+			);
+			path = IntentsFlowUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,15 +221,52 @@
 				D635A02C24DF8D4A00CABD06 /* Sources */,
 				D635A02D24DF8D4A00CABD06 /* Frameworks */,
 				D635A02E24DF8D4A00CABD06 /* Resources */,
+				D635A07E24E1062700CABD06 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D635A07324E1062700CABD06 /* PBXTargetDependency */,
+				D635A07624E1062700CABD06 /* PBXTargetDependency */,
 			);
 			name = FlowApp;
 			productName = FlowApp;
 			productReference = D635A03024DF8D4A00CABD06 /* FlowApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D635A05D24E1062600CABD06 /* IntentsFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D635A07B24E1062700CABD06 /* Build configuration list for PBXNativeTarget "IntentsFlow" */;
+			buildPhases = (
+				D635A05A24E1062600CABD06 /* Sources */,
+				D635A05B24E1062600CABD06 /* Frameworks */,
+				D635A05C24E1062600CABD06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentsFlow;
+			productName = IntentsFlow;
+			productReference = D635A05E24E1062600CABD06 /* IntentsFlow.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D635A06624E1062700CABD06 /* IntentsFlowUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D635A07824E1062700CABD06 /* Build configuration list for PBXNativeTarget "IntentsFlowUI" */;
+			buildPhases = (
+				D635A06324E1062700CABD06 /* Sources */,
+				D635A06424E1062700CABD06 /* Frameworks */,
+				D635A06524E1062700CABD06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentsFlowUI;
+			productName = IntentsFlowUI;
+			productReference = D635A06724E1062700CABD06 /* IntentsFlowUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -141,6 +278,12 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					D635A02F24DF8D4A00CABD06 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					D635A05D24E1062600CABD06 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					D635A06624E1062700CABD06 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -159,6 +302,8 @@
 			projectRoot = "";
 			targets = (
 				D635A02F24DF8D4A00CABD06 /* FlowApp */,
+				D635A05D24E1062600CABD06 /* IntentsFlow */,
+				D635A06624E1062700CABD06 /* IntentsFlowUI */,
 			);
 		};
 /* End PBXProject section */
@@ -173,6 +318,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D635A05C24E1062600CABD06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D635A06524E1062700CABD06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D635A07024E1062700CABD06 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -181,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D635A03624DF8D4A00CABD06 /* ContentView.swift in Sources */,
+				D6B0E00624E2649500642DC9 /* FlowIntents.intentdefinition in Sources */,
 				D635A04424DFA19800CABD06 /* IncommingMainView.swift in Sources */,
 				D635A05924E0F72100CABD06 /* AppDelegate.swift in Sources */,
 				D635A05224DFA98A00CABD06 /* IncommingItemView.swift in Sources */,
@@ -193,7 +354,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D635A05A24E1062600CABD06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B0E00324E2576900642DC9 /* FlowIntents.intentdefinition in Sources */,
+				D6B0E00524E25B4800642DC9 /* AddIncommingIntentHandler.swift in Sources */,
+				D635A06124E1062700CABD06 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D635A06324E1062700CABD06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D635A06D24E1062700CABD06 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D635A07324E1062700CABD06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D635A06624E1062700CABD06 /* IntentsFlowUI */;
+			targetProxy = D635A07224E1062700CABD06 /* PBXContainerItemProxy */;
+		};
+		D635A07624E1062700CABD06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D635A05D24E1062600CABD06 /* IntentsFlow */;
+			targetProxy = D635A07524E1062700CABD06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D635A06E24E1062700CABD06 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D635A06F24E1062700CABD06 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D635A03D24DF8D4C00CABD06 /* Debug */ = {
@@ -315,6 +518,7 @@
 		D635A04024DF8D4C00CABD06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FlowApp/FlowApp.entitlements;
@@ -338,6 +542,7 @@
 		D635A04124DF8D4C00CABD06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FlowApp/FlowApp.entitlements;
@@ -358,6 +563,84 @@
 			};
 			name = Release;
 		};
+		D635A07924E1062700CABD06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6AFWAWALQ;
+				INFOPLIST_FILE = IntentsFlowUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.horacioguzman.FlowApp.IntentsFlowUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D635A07A24E1062700CABD06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6AFWAWALQ;
+				INFOPLIST_FILE = IntentsFlowUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.horacioguzman.FlowApp.IntentsFlowUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D635A07C24E1062700CABD06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6AFWAWALQ;
+				INFOPLIST_FILE = IntentsFlow/Info.plist;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.horacioguzman.FlowApp.IntentsFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D635A07D24E1062700CABD06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6AFWAWALQ;
+				INFOPLIST_FILE = IntentsFlow/Info.plist;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.horacioguzman.FlowApp.IntentsFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -375,6 +658,24 @@
 			buildConfigurations = (
 				D635A04024DF8D4C00CABD06 /* Debug */,
 				D635A04124DF8D4C00CABD06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D635A07824E1062700CABD06 /* Build configuration list for PBXNativeTarget "IntentsFlowUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D635A07924E1062700CABD06 /* Debug */,
+				D635A07A24E1062700CABD06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D635A07B24E1062700CABD06 /* Build configuration list for PBXNativeTarget "IntentsFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D635A07C24E1062700CABD06 /* Debug */,
+				D635A07D24E1062700CABD06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
